@@ -1,0 +1,45 @@
+{
+  "cipok": [
+    {
+      "marka": "Adidas",
+      "modell": "Ultraboost 22",
+      "szin": "Fehér",
+      "meret": 43,
+      "ar": 52990,
+      "keszleten": true,
+      "megjelenes_datuma": "2023-06-10",
+      "id": "byRUbEUOiK8"
+    },
+    {
+      "marka": "Puma",
+      "modell": "RS-X",
+      "szin": "Piros",
+      "meret": 41,
+      "ar": 32990,
+      "keszleten": false,
+      "megjelenes_datuma": "2022-09-20",
+      "id": "6anSvvK_NSg"
+    },
+    {
+      "marka": "New Balance",
+      "modell": "574 Classic",
+      "szin": "Szürke",
+      "meret": 44,
+      "ar": 38990,
+      "keszleten": true,
+      "megjelenes_datuma": "2023-11-05",
+      "id": "6GkB20ZhR8Q"
+    },
+    {
+      "marka": "Converse",
+      "modell": "Chuck Taylor All Star",
+      "szin": "Kék",
+      "meret": 40,
+      "ar": 24990,
+      "keszleten": false,
+      "megjelenes_datuma": "2021-04-12",
+      "id": "nLSsaXq3R7U"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
