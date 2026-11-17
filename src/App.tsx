@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import type { Cipo } from "./types/type"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './index.css'
  
 function App() {
     const [cipok, setCipok] = useState<Cipo[]>([])
@@ -61,8 +62,6 @@ function App() {
         catch (err) {
             console.log(err)
         }
- 
-        console.log(ujCipo)
     }
  
     return (
@@ -70,7 +69,7 @@ function App() {
             <h1>Cipők</h1>
             <h2>Cipők listája</h2>
  
-            <table className="table table-hover table-bordered">
+            <table  className="table table-hover table-bordered">
                 <thead>
                     <tr>
                         <th>Márka</th>
@@ -97,81 +96,76 @@ function App() {
                     ))}
                 </tbody>
             </table>
+            <br />
  
-            <h2>Új cipő felvétele</h2>
+            <h2 style={{color:"orange", fontWeight:"bolder"}}>Új cipő felvétele</h2>
  
             <form onSubmit={handleCipoFelvetel}>
                 <label htmlFor="input_marka">Márka:</label>
                 <input
+                style={{backgroundColor:"blue"}}
                     id="input_marka"
                     type="text"
                     value={marka}
                     onChange={(e) => setMarka(e.target.value)}
                 />
  
-                <br /><br />
- 
                 <label htmlFor="input_modell">Modell:</label>
                 <input
+                style={{backgroundColor:"blue"}}
                     id="input_modell"
                     type="text"
                     value={modell}
                     onChange={(e) => setModell(e.target.value)}
                 />
  
-                <br /><br />
- 
                 <label htmlFor="input_szin">Szín:</label>
                 <input
+                style={{backgroundColor:"blue"}}
                     id="input_szin"
                     type="text"
                     value={szin}
                     onChange={(e) => setSzin(e.target.value)}
                 />
  
-                <br /><br />
- 
                 <label htmlFor="input_meret">Méret:</label>
                 <input
+                style={{backgroundColor:"blue"}}
                     id="input_meret"
                     type="number"
                     value={meret}
                     onChange={(e) => setMeret(Number(e.target.value))}
                 />
  
-                <br /><br />
- 
                 <label htmlFor="input_ar">Ár:</label>
                 <input
+                style={{backgroundColor:"blue"}}
                     id="input_ar"
                     type="number"
                     value={ar}
                     onChange={(e) => setAr(Number(e.target.value))}
                 />
  
-                <br /><br />
- 
-                <label htmlFor="input_keszleten">Készleten:</label>
+                <label htmlFor="input_keszleten">Készleten:  </label>
                 <input
                     id="input_keszleten"
                     type="checkbox"
                     checked={keszleten}
                     onChange={(e) => setKeszleten(e.target.checked)}
                 />
- 
-                <br /><br />
+                
+                <br />
  
                 <label htmlFor="input_megjelenes">Megjelenés dátuma:</label>
                 <input
+                style={{backgroundColor:"blue"}}
                     id="input_megjelenes"
                     type="date"
                     value={megjelenes_datuma}
                     onChange={(e) => setMegjelenes(e.target.value)}
                 />
  
-                <br /><br />
- 
-                <button type="submit">Cipő felvétele</button>
+                <button className="btn btn-warning" type="submit">Cipő felvétele</button>
             </form>
         </>
     )

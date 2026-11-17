@@ -1,0 +1,98 @@
+
+html, body {
+    background-color: #ccff00 !important;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#root {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff8c00;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #ff8c00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(245, 0, 245);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+thead,
+thead tr,
+thead th,
+tbody,
+tbody tr,
+tbody td {
+    background-color: rgb(245, 0, 245) !important;
+    color: white !important;
+}
+
+td, th {
+    padding: 10px !important;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+tr:hover td,
+tr:hover th {
+    background-color: rgb(210, 0, 210) !important;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgb(245, 0, 245);
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+form input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    padding: 9px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}

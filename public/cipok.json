@@ -39,6 +39,36 @@
       "keszleten": false,
       "megjelenes_datuma": "2021-04-12",
       "id": "nLSsaXq3R7U"
+    },
+    {
+      "marka": "NewBalance",
+      "modell": "aaaaa-x",
+      "szin": "kék",
+      "meret": 42,
+      "ar": 14,
+      "keszleten": true,
+      "megjelenes_datuma": "2026-11-26",
+      "id": "dEfKvKVzzBY"
+    },
+    {
+      "marka": "Jordan 4",
+      "modell": "aaaaaaaaaa",
+      "szin": "zöld",
+      "meret": 44,
+      "ar": 10000,
+      "keszleten": false,
+      "megjelenes_datuma": "2026-11-04",
+      "id": "7SHK6VjziJ8"
+    },
+    {
+      "marka": "alma",
+      "modell": "bbbb",
+      "szin": "q",
+      "meret": 32,
+      "ar": 1111111,
+      "keszleten": true,
+      "megjelenes_datuma": "2026-11-11",
+      "id": "R8tI3jkSzCA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
